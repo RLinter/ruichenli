@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px 0;
+}
+
+.max_width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+
+/* Navigation CSS */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 5px;
+    font-family: 'Arimo', sans-serif;
+    transition: all 0.4s ease;
+    background-color: #333;
+}
+
+.navbar .sticky{
+    padding: 10px 0;
+    background: crimson;
+}
+
+.navbar .max_width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.4s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: crimson;
+}
+
+/* Homepage CSS */
+
+.home{
+    display: flex;
+    background: url("studying2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: black;
+    min-height: 500px;
+    font-family: 'Arimo', sans-serif;
+    
+}
+
+.home .max_width{
+    margin: auto;
+}
+.home .home-content .txt1{
+    font-size: 75px;
+    font-weight: 600;
+    text-align: center;
+}
+.home .home-content .txt2{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.home .home-content .txt2 span{
+    color: blue;
+    font-weight: 650;
+    font-size: 40px;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+
+/* About me CSS */
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about .about-content .right{
+    width: 45%;
+}
+
+.about .about-content .right .text{
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.about .about-content .right a:link{
+    color: red;
+}
+
+.about .about-content .right a:visited {
+    color: green;
+}
+
+.about .about-content .right a:hover {
+    color: hotpink;
+}
+
+.about .about-content .right a:active {
+    color: blue;
+}
+
+/* Skills CSS */
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.skills-content .right .java::before{
+    width: 90%;
+    background: crimson;
+}
+.skills-content .right .cpp::before{
+    width: 50%;
+    background: orange;
+}
+.skills-content .right .html::before{
+    width: 60%;
+    background: orange;
+}
+.skills-content .right .py::before{
+    width: 40%;
+    background: yellowgreen;
+}
+.skills-content .right .r::before{
+    width: 80%;
+    background: crimson;
+}
+.skills-content .right .c::before{
+    width: 30%;
+    background: yellowgreen;
+}
+
