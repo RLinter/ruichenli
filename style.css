@@ -171,7 +171,7 @@ section .title{
 }
 
 .about .about-content .right a:link{
-    color: red;
+    color: blue;
 }
 
 .about .about-content .right a:visited {
@@ -183,7 +183,7 @@ section .title{
 }
 
 .about .about-content .right a:active {
-    color: blue;
+    color: darkslateblue;
 }
 
 /* Skills CSS */
@@ -263,3 +263,98 @@ section .title{
     background: yellowgreen;
 }
 
+/* Experience CSS */
+
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience-content{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+}
+
+.experience-content .styled-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table caption {
+    padding: 25px 15px;
+    font-size: 25px;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* Resume CSS */
+
+.resume{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resume-content .frame{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  box-sizing: border-box;
+}
+
+.resume .resume-content a:link{
+    color: blue;
+}
+
+.resume .resume-content a:visited {
+    color: green;
+}
+
+.resume .resume-content a:hover {
+    color: hotpink;
+}
+
+.resume .resume-content a:active {
+    color: darkslateblue;
+}
+
+/* Footer */
+
+footer{
+    background: #111;
+    padding: 15px 25px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+}
