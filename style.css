@@ -247,20 +247,24 @@ section .title{
     background: orange;
 }
 .skills-content .right .html::before{
-    width: 60%;
-    background: orange;
+    width: 80%;
+    background: crimson;
 }
 .skills-content .right .py::before{
     width: 40%;
     background: yellowgreen;
 }
 .skills-content .right .r::before{
-    width: 80%;
-    background: crimson;
+    width: 70%;
+    background: orange;
 }
 .skills-content .right .c::before{
     width: 30%;
     background: yellowgreen;
+}
+.skills-content .right .js::before{
+    width: 80%;
+    background: crimson;
 }
 
 /* Experience CSS */
